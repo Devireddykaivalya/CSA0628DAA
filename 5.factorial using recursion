@@ -1,0 +1,19 @@
+#include <stdio.h>
+int fact(int n) 
+{
+	if(n==1 || n==0){
+		return 1;
+	}
+	else{
+		return n*fact(n-1);
+	}
+}
+int main()
+{
+	int n,i,fact1;
+	printf("enter the number:-");
+	scanf("%d",&n);
+	fact1=fact(n);
+	printf("factorial=%d",fact1);
+
+}
